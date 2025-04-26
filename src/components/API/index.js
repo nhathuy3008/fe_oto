@@ -110,7 +110,7 @@ export const getProductByIdAPI = async (productId) => {
 // Manager Account APIs
 export const getAllAccountsAPI = async () => {
   try {
-    const response = await fetch('http://localhost:3000/api/accounts', {
+    const response = await fetch(`${API_URL}/api/accounts`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
